@@ -5,6 +5,7 @@ gulp.task('dist', function() {
   gulp.src('./*.js')
     .pipe(gulp.dest('dist'))
     .pipe(livereload());
+  console.log(livereload.server);
 });
 
 gulp.task('default', function() {
